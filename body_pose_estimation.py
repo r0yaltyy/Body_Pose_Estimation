@@ -63,7 +63,7 @@ while True:
             Good_distance_for_cross_hands_X = (distance(px[12], px[11]) / 3)
             Good_distance_for_cross_hands_Y = (distance(px[12], px[11]) / 3)
             #Распознаем руки (0 - правая, 1 - левая) на противоположных плечах по обеим координатам
-            hand_on_shoulder[0] = 1 if (distance(px[16], px[11]) < Good_distance_for_cross_hands_X and distance(py[16], py[11]) < Good_distance_for_cross_hands_Y)  else 0
+            hand_on_shoulder[0] = 1 if (distance(px[20], px[11]) < Good_distance_for_cross_hands_X and distance(py[19], py[11]) < Good_distance_for_cross_hands_Y)  else 0
             hand_on_shoulder[1] = 1 if (distance(px[15], px[12]) < Good_distance_for_cross_hands_X and distance(py[15], py[12]) < Good_distance_for_cross_hands_Y)  else 0
             #Получаем расстояние по оси Y для правильного положения локтя (рядом с соответствующим бедром)
             Good_distance_for_elbow_Y = distance(px[24], px[23]) * 3/2
